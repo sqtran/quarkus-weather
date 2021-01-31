@@ -17,7 +17,7 @@ The application can be packaged using:
 ```shell script
 mvn package
 ```
-It produces the `code-with-quarkus-1.0.0-SNAPSHOT-runner.jar` file in the `/target` directory.
+It produces the `weatherman-0.0.1-runner.jar` file in the `/target` directory.
 Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/lib` directory.
 
 If you want to build an _über-jar_, execute the following command:
@@ -25,7 +25,7 @@ If you want to build an _über-jar_, execute the following command:
 mvn package -Dquarkus.package.type=uber-jar
 ```
 
-The application is now runnable using `java -jar target/code-with-quarkus-1.0.0-SNAPSHOT-runner.jar`.
+The application is now runnable using `java -jar target/weatherman-0.0.1-runner.jar`.
 
 ## Creating a native executable
 
@@ -39,7 +39,7 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 mvn package -Pnative -Dquarkus.native.container-build=true
 ```
 
-You can then execute your native executable with: `./target/code-with-quarkus-1.0.0-SNAPSHOT-runner`
+You can then execute your native executable with: `./target/weatherman-0.0.1-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
 
